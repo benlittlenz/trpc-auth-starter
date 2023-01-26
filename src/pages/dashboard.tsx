@@ -11,7 +11,6 @@ const DashboardPage = () => {
 
   return (
     <div>
-      <Sidebar />
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content">
           <div className="max-w-lg">

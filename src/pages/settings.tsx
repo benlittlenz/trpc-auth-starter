@@ -11,10 +11,9 @@ import {
   changePasswordSchema,
 } from "../utils/validation/auth";
 import { trpc } from "../utils/trpc";
-import { getSession, signOut, useSession } from "next-auth/react";
+import { getSession, signOut } from "next-auth/react";
 import { GetServerSidePropsContext } from "next";
 import Alert from "../ui/Alert";
-import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 interface LayoutProps {

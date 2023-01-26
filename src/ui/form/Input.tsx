@@ -9,7 +9,7 @@ interface InputProps
   type?: "text" | "email" | "password";
   name: string;
   className?: string;
-  registration: Partial<UseFormRegisterReturn>;
+  registration?: Partial<UseFormRegisterReturn>;
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(

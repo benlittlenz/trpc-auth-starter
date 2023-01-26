@@ -3,6 +3,7 @@
 
 generator client {
     provider = "prisma-client-js"
+    previewFeatures = ["fullTextSearch"]
 }
 
 datasource db {
@@ -73,4 +74,11 @@ model ResetPasswordRequest {
 enum UserPlan {
   FREE
   PRO
+}
+
+model Job {
+    id            Int    @id @default(autoincrement())
+    name          String?
+    description          String?
+    status          String?
 }
